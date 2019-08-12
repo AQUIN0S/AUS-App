@@ -1,7 +1,114 @@
-.title-text {
-    padding: 1rem;
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: black;
 }
 
-.blue {
-    background-image: linear-gradient(royalblue, lightskyblue);
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    width: 80%;
+    padding: 10px 10% 10px 10%;
+    font-weight: bold;
+    font-size: small;
+    vertical-align: bottom;
+}
+
+header {
+    text-align: center;
+    background-image: linear-gradient(royalblue, deepskyblue);
+    padding: 16px;
+}
+
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 60px;
+}
+
+.topnav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    overflow: auto;
+    background-image: linear-gradient(deepskyblue, white);
+}
+
+.topnav a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 26px;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    float: left;
+}
+
+.topnav a.active {
+    border-bottom: royalblue;
+    border-bottom-style: solid;
+    border-bottom-width: thick;
+}
+
+.topnav a:hover:not(.active) {
+    filter: opacity(50%);
+}
+
+.topnav a.right {
+    float: right;
+}
+
+.page-container {
+    min-height: 100%;
+    position: relative;
+}
+
+.title-text {
+    display: inline;
+    color: black;
+    font-size: xx-large;
+}
+
+a.icon {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+
+    .title-text {
+        font-size: large;
+    }
+
+    .topnav {
+        padding: 0;
+    }
+
+    .topnav a {
+        float: none;
+    }
+
+    .topnav a.active {
+        border-bottom-style: none;
+        background-color: royalblue;
+    }
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        margin: auto;
+        display: block;
+    }
+
+    .topnav.responsive a {
+        display: block;
+    }
 }

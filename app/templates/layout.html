@@ -5,161 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts.js') }}" async></script>
 
     <title>
-        {% if name %}
-            AUSC - {{ name }}
+        {% if title %}
+            AUSC - {{ title }}
         {% else %}
             AUSC
         {% endif %}
     </title>
 </head>
 <body>
-    <header>
-        <div class="container-fluid text-center title-text">
-            <h1>Auckland University Squash Club</h1>
-        </div>
-    </header>
-    <nav class="nav bg-primary sticky-top">
-        <a class="navbar-brand ml-3 text-white" href="#">AUSC</a>
-        <a class="nav-link text-white" href="#">Home</a>
-        <a class="nav-link text-white" href="#">About</a>
-        <a class="nav-link text-white" href="#">Membership</a>
-        <a class="nav-link text-white" href="#" style="margin-left: auto">Contact Us</a>
-    </nav>
-    <main role="main" class="container">
-        {% block content %}{% endblock content %}
-
-        <p>
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-        </p>
-        <p>
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-        </p>
-        <p>
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-        </p>
-        <p>
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-        </p>
-        <p>
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-        </p>
-        <p>
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-        </p>
-        <p>
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-        </p>
-        <p>
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-        </p>
-        <p>
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-        </p>
-        <p>
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-        </p>
-        <p>
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-            This is content. This is content. This is content. This is content. This is content. This is content.
-        </p>
-        <p>
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-            More content. More content. More content. More content. More content. More content. More content. More content.
-        </p>
-    </main>
-
-
-
-    <!-- Optional JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <div class="page-container">
+        <header>
+            <h1 class="title-text">Auckland University Squash Club</h1>
+        </header>
+        <nav id="myTopnav" class="topnav">
+            <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveNavBar()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a {% if title=="Home" %}class="active"{% endif %} href="{{ url_for('home') }}">Home</a>
+            <a {% if title=="About" %}class="active"{% endif %} href="{{ url_for('about') }}">About</a>
+            <a {% if title=="Memberships" %}class="active"{% endif %} href="{{ url_for('membership') }}">Membership</a>
+            <a {% if title=="Contact Us" %}class="active"{% endif %} href="{{ url_for('contact') }}">Contact Us</a>
+        </nav>
+        <main>
+            {% block content %}{% endblock content %}
+        </main>
+        <footer>
+            Website designed by Daniel Schimanski
+        </footer>
+    </div>
 </body>
 </html>

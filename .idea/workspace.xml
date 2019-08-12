@@ -2,21 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ece7225c-b595-4f5d-a857-abc361dd648a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/AUSC-App.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/danny.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.idea/app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/membership.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/danny.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/danny.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layout.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,9 +22,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
         <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -84,6 +80,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Flask (app/app.py)" type="Python.FlaskServer" nameIsGenerated="true">
+      <option name="flaskDebug" value="true" />
       <module name="AUSC-App" />
       <option name="target" value="$PROJECT_DIR$/app/app.py" />
       <option name="targetType" value="PATH" />
@@ -115,6 +112,8 @@
       <workItem from="1565156614510" duration="1711000" />
       <workItem from="1565159585174" duration="2879000" />
       <workItem from="1565176465837" duration="5750000" />
+      <workItem from="1565360162522" duration="3554000" />
+      <workItem from="1565582398961" duration="5009000" />
     </task>
     <servers />
   </component>
@@ -138,6 +137,6 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/AUSC_App$Flask__app_app_py_.coverage" NAME="Flask (app/app.py) Coverage Results" MODIFIED="1565182140177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AUSC_App$Flask__app_app_py_.coverage" NAME="Flask (app/app.py) Coverage Results" MODIFIED="1565583026613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
